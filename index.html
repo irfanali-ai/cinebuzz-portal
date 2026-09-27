@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBuzz | Travel at 11:11</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div id="loader">
+    <h1>CineBuzz</h1>
+    <p>Loading Travel at 11:11 Experience...</p>
+</div>
+
+
+<header>
+    <nav>
+        <div class="logo">
+            Cine<span>Buzz</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#movie">About Movie</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#booking">Booking</a></li>
+        </ul>
+        <button class="nav-btn" id="navBookBtn">
+            Book Now
+        </button>
+    </nav>
+</header>
+
+<section id="home" class="page-view hero">
+    <div class="stars"></div>
+    <div class="hero-content">
+        <span class="hero-tag">A HORROR COMEDY ROAD TRIP</span>
+        <h1>TRAVEL AT 11:11</h1>
+        <p class="hero-subtitle">
+            Six friends. One unexpected road trip. Countless hilarious nightmares.
+        </p>
+
+        <div class="hero-video">
+            <video autoplay muted loop playsinline>
+                <source src="assets/main-banner/travel1.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="time-warning">
+                <span>11:11</span>
+                <small>Don't stop here...</small>
+            </div>
+        </div>
+
+        <div class="hero-buttons">
+            <button id="watchTrailerBtn">🎬 Watch Trailer</button>
+            <button id="heroBookBtn">🎟 Book Experience</button>
+        </div>
+    </div>
+</section>
+
+<section id="movie" class="page-view movie-section">
+    <span class="section-label">THE STORY</span>
+    <h2>About The Movie</h2>
+
+    <div class="about-container">
+        <!-- Left Side Image -->
+        <div class="about-image">
+            <img src="assets/about-section-image/moive_img.png" alt="Travel at 11:11 Characters">
+        </div>
+
+        <!-- Right Side Movie Details -->
+        <div class="movie-info text-center">
+            <p class="movie-desc">
+                Six close friends set out on a fun road trip expecting jokes, memories, and adventure. 
+                When their journey takes an unexpected turn at 11:11 PM, a series of strange events and a mysterious ghost turn their peaceful trip into a hilarious horror trip!
+            </p>
+
+            <div class="movie-details">
+                <div>
+                    <h3>Genre</h3>
+                    <p>Horror / Comedy</p>
+                </div>
+                <div>
+                    <h3>Release</h3>
+                    <p>24 September</p>
+                </div>
+                <div>
+                    <h3>Duration</h3>
+                    <p>2 hr 30 min</p>
+                </div>
+                <div>
+                    <h3>Language</h3>
+                    <p>English</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TRAILER ================= -->
+<section id="trailer" class="page-view trailer-section">
+    <span class="section-label">GET READY</span>
+    <h2>Official Trailer</h2>
+
+    <div class="video-box">
+        <!-- Autoplay hata diya hai taake poster image thumbnail ki tarah show ho -->
+        <video id="officialTrailerVideo" controls poster="assets/trailer/poster.jpeg" preload="metadata">
+            <source src="assets/trailer/trailer.mp4" type="video/mp4">
+            Your browser does not support video tag.
+        </video>
+    </div>
+</section>
+<section id="characters" class="page-view characters-section">
+    <span class="section-label">THE SIX FRIENDS</span>
+    <h2>Meet The Characters</h2>
+
+    <div class="character-container">
+        <!-- Row 1 (3 Characters) -->
+        <div class="character-card">
+            <img src="assets/character/Mark.png" alt="Mark">
+            <div class="character-info">
+                <h3>Mark</h3>
+                <p>The gym-obsessed powerhouse who is easily scared by the smallest spooky noise.</p>
+            </div>
+        </div>
+
+        <div class="character-card">
+            <img src="assets/character/Hurri.png" alt="Hurri">
+            <div class="character-info">
+                <h3>Hurri</h3>
+                <p>The brave and big-hearted anchor who always protects and supports the group.</p>
+            </div>
+        </div>
+
+        <div class="character-card">
+            <img src="assets/character/Alex.png" alt="Alex">
+            <div class="character-info">
+                <h3>Alex</h3>
+                <p>The calm and strategic visionary who keeps a cool head in every high-stress moment.</p>
+            </div>
+        </div>
+
+        <!-- Row 2 (3 Characters) -->
+        <div class="character-card">
+            <img src="assets/character/Aaron.png" alt="Aaron">
+            <div class="character-info">
+                <h3>Aaron</h3>
+                <p>The hyper-excited and curious younger member who brings energetic joy to the team.</p>
+            </div>
+        </div>
+
+        <div class="character-card">
+            <img src="assets/character/Mimi.png" alt="Mimi">
+            <div class="character-info">
+                <h3>Mimi</h3>
+                <p>The smart, tomboyish daydreamer whose sharp wit bridges fantasy and reality.</p>
+            </div>
+        </div>
+
+        <div class="character-card">
+            <img src="assets/character/Zack.png" alt="Zack">
+            <div class="character-info">
+                <h3>Zack</h3>
+                <p>The rock-solid backbone and ultimate strength that keeps the entire crew together.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="recommendations" class="page-view recommendation-section">
+    <span class="section-label">RECOMMENDED FOR YOU</span>
+    <h2>Movie Recommendations</h2>
+
+    <div class="recommend-grid">
+        <div class="recommend-card">
+            <h3>Midnight Road Trip</h3>
+            <p>Horror Comedy • 2h 10m</p>
+            <p>A fun midnight highway drive turns into a ghostly comedic detour.</p>
+        </div>
+        <div class="recommend-card">
+            <h3>The Haunted Motel</h3>
+            <p>Horror Comedy • 1h 55m</p>
+            <p>Six tourists accidentally check into a motel run by friendly ghosts.</p>
+        </div>
+        <div class="recommend-card">
+            <h3>Friends After Dark</h3>
+            <p>Comedy / Mystery • 2h 20m</p>
+            <p>A group of friends gets lost on a dark mountain path with unexpected hilarious encounters.</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="booking" class="page-view booking-section">
+    <span class="section-label">RESERVE YOUR SEAT</span>
+    <h2>: BOOK YOUR EXPERIENCE :</h2>
+
+    <div class="booking-wrapper">
+        <!-- Left Side Character Image -->
+        <div class="booking-character">
+            <img src="assets/ticket-image/ticket.png" alt="Aaron Presenting Booking">
+        </div>
+
+        <!-- Right Side Booking Box -->
+        <div class="booking-box luxury-box">
+            <div class="booking-step" id="step1">
+                <!-- SELECT CINEMA -->
+                <label for="cinema" style="color: #f29f05; font-size: 13px; font-weight: 600; display: block; text-align: left; margin-top: 15px;">Select Cinema</label>
+                <div id="cinemaDropdown" style="position: relative; width: 100%; margin-top: 6px; user-select: none;">
+                    <div id="selectedCinemaText" onclick="toggleDropdown('cinemaOptions')" style="width: 100%; padding: 12px 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.4); color: white; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+                        <span>CineBuzz Nuplex Branch</span><span style="color: #f29f05; font-size: 11px;">▼</span>
+                    </div>
+                    <div id="cinemaOptions" class="hidden" style="position: absolute; top: 105%; left: 0; width: 100%; background: #140a1e; border: 1px solid #f29f05; border-radius: 12px; z-index: 100; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.8); text-align: left;">
+                        <div onclick="selectVal('cinema', 'CineBuzz Nuplex Branch', 'selectedCinemaText', 'cinemaOptions')" onmouseover="this.style.background='#f29f05'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';" style="padding: 12px 15px; color: white; font-size: 14px; cursor: pointer; transition: 0.2s; text-align: left;">CineBuzz Nuplex Branch</div>
+                        <div onclick="selectVal('cinema', 'CineBuzz Downtown Branch', 'selectedCinemaText', 'cinemaOptions')" onmouseover="this.style.background='#f29f05'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';" style="padding: 12px 15px; color: white; font-size: 14px; cursor: pointer; transition: 0.2s; text-align: left;">CineBuzz Downtown Branch</div>
+                        <div onclick="selectVal('cinema', 'CineBuzz Galaxy Mall Branch', 'selectedCinemaText', 'cinemaOptions')" onmouseover="this.style.background='#f29f05'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';" style="padding: 12px 15px; color: white; font-size: 14px; cursor: pointer; transition: 0.2s; text-align: left;">CineBuzz Galaxy Mall Branch</div>
+                    </div>
+                </div>
+                <input type="hidden" id="cinema" value="CineBuzz Nuplex Branch">
+
+                <!-- SELECT DATE -->
+                <label for="date" style="color: #f29f05; font-size: 13px; font-weight: 600; display: block; text-align: left; margin-top: 15px;">Select Date</label>
+                <div id="dateDropdown" style="position: relative; width: 100%; margin-top: 6px; user-select: none;">
+                    <div id="selectedDateText" onclick="toggleDropdown('dateOptions')" style="width: 100%; padding: 12px 15px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.4); color: white; font-family: 'Poppins', sans-serif; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-align: left;">
+                        <span>24 September 2026</span><span style="color: #f29f05; font-size: 11px;">▼</span>
+                    </div>
+                    <div id="dateOptions" class="hidden" style="position: absolute; top: 105%; left: 0; width: 100%; background: #140a1e; border: 1px solid #f29f05; border-radius: 12px; z-index: 100; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.8); text-align: left;">
+                        <div onclick="selectVal('date', '24 September 2026', 'selectedDateText', 'dateOptions')" onmouseover="this.style.background='#f29f05'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';" style="padding: 12px 15px; color: white; font-size: 14px; cursor: pointer; transition: 0.2s; text-align: left;">24 September 2026</div>
+                        <div onclick="selectVal('date', '25 September 2026', 'selectedDateText', 'dateOptions')" onmouseover="this.style.background='#f29f05'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';" style="padding: 12px 15px; color: white; font-size: 14px; cursor: pointer; transition: 0.2s; text-align: left;">25 September 2026</div>
+                        <div onclick="selectVal('date', '26 September 2026', 'selectedDateText', 'dateOptions')" onmouseover="this.style.background='#f29f05'; this.style.color='#000';" onmouseout="this.style.background='transparent'; this.style.color='#fff';" style="padding: 12px 15px; color: white; font-size: 14px; cursor: pointer; transition: 0.2s; text-align: left;">26 September 2026</div>
+                    </div>
+                </div>
+                <input type="hidden" id="date" value="24 September 2026">
+
+                <label>Select Showtime</label>
+                <div class="showtimes">
+                    <button type="button" class="time-btn active">2:00 PM</button>
+                    <button type="button" class="time-btn">7:00 PM</button>
+                </div>
+
+                <label for="tickets">Tickets</label>
+                <input type="number" value="1" min="1" max="10" id="tickets">
+
+                <button id="continueBtn">Review Booking & Proceed</button>
+            </div>
+
+            <!-- Review Booking & Payment -->
+            <div class="booking-step hidden" id="step2">
+                <h3 class="step-title">Review Booking & Payment</h3>
+                
+                <div class="summary-details">
+                    <p>Movie: <b>Travel at 11:11</b></p>
+                    <p>Cinema: <b id="selectedCinema">CineBuzz Nuplex Branch</b></p>
+                    <p>Date: <b id="selectedDate">24 September 2026</b></p>
+                    <p>Showtime: <b id="selectedTime">2:00 PM</b></p>
+                    <p>Tickets: <b id="selectedTickets">1</b></p>
+                    <p>Total Price: <b id="totalPrice">PKR 1000</b></p>
+                </div>
+
+                <div class="payment-inputs">
+                    <input id="cardNumber" placeholder="Card Number (16 Digits)" maxlength="16">
+                    <input id="cardName" placeholder="Card Holder Name">
+                </div>
+
+                <button id="completeBooking">Proceed To Payment</button>
+                <small id="paymentMessage"></small>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="confirmation" class="page-view confirmation-section hidden">
+    <!-- AAPKI SEND KI HUI VIDEO ANIMATION YAHAN CHALEGI -->
+    <div id="ticketAnimation" class="ticket-anim-box hidden">
+        <video id="ticketVideoAnim" muted playsinline width="100%" style="max-width: 650px; border-radius: 20px; box-shadow: 0 0 40px rgba(242, 159, 5, 0.4);">
+            <source src="assets/ticket_anim.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <p style="margin-top: 15px; color: var(--gold); font-family: 'Orbitron', sans-serif; letter-spacing: 2px;">Confirming Booking...</p>
+    </div>
+
+    <!-- VIDEO K BAD CONFIRMED TICKET DISPLAY HOGA -->
+    <div id="confirmedCard" class="ticket luxury-ticket hidden">
+        <h3>CineBuzz</h3>
+        <h4>TRAVEL AT 11:11</h4>
+        <p>Booking ID: <strong id="bookingId">CB2098</strong></p>
+        <p id="ticketDetails">Your ticket has been reserved.</p>
+        <div class="ticket-stamp">BOOKING CONFIRMED - ADMIT ONE</div>
+    </div>
+</section>
+
+<footer>
+    <h3>Cine<span>Buzz</span></h3>
+    <p>Travel at 11:11 — Official Movie & Booking Portal</p>
+    <p class="copyright">© 2026 CineBuzz. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
